@@ -1,5 +1,5 @@
 import { HomeHeader } from "@/components/HomeHeader";
-import { View } from "react-native";
+import { View, StatusBar } from "react-native";
 import { Target } from "@/components/Target";
 import { List } from "@/components/List";
 import { Button } from "@/components/Button";
@@ -39,6 +39,7 @@ const targets = [
 export default function App() {
   return (
     <View style={{ flex: 1 }}>
+      <StatusBar barStyle="light-content" />
       <HomeHeader data={summary} />
 
       <List
